@@ -3,6 +3,8 @@ import typescriptLogo from "./typescript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.ts";
 
+import * as lodash from "lodash";
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
@@ -32,3 +34,6 @@ function addNumbers(numberA: number, numberB: number) {
 }
 
 addNumbers(2, 3);
+
+const superCodeKebab = lodash.kebabCase("HALLO SUPERCODE");
+console.log(superCodeKebab);
