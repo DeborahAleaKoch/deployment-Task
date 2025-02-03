@@ -26,5 +26,9 @@ setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
 // Schreibe eine Funktion in die main.ts, z. B. add(number: number, number: number)
 
 function addNumbers(numberA: number, numberB: number) {
+	console.log(numberA, numberB);
+
 	return numberA + numberB;
 }
+
+addNumbers(2, 3);
